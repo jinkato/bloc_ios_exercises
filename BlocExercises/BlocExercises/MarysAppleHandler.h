@@ -11,6 +11,7 @@
 @interface MarysAppleHandler : NSObject
 
 @property (nonatomic, assign) BOOL getsDiscount;
+@property (nonatomic, assign) BOOL drinkingAge;
 
 /**
  Indicates which item Mary can purchase, given an amount of dollars.
