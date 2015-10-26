@@ -38,6 +38,11 @@
     [super tearDown];
 }
 
+
+
+
+
+
 - (void) testThatStringsAreTurnedIntoArraysProperly {
     NSString *testString = [NSString stringWithFormat:@"%@;%@;%@", self.worf, self.picard, self.crusher];
     NSArray *expectedArray = @[self.worf, self.picard, self.crusher];
@@ -50,6 +55,9 @@
     XCTAssertEqualObjects(expectedArray, actualArray, @"The returned array was different than expected.");
 }
 
+
+
+
 - (void) testThatArraysAreTurnedIntoStringsProperly {
     NSArray *testArray = @[self.worf, self.picard, self.crusher];
     NSString *expectedString = [NSString stringWithFormat:@"%@;%@;%@", self.worf, self.picard, self.crusher];
@@ -61,6 +69,9 @@
     actualString = [self.starTrekArrays stringOfStarTrekCharactersFromArray:testArray];
     XCTAssertEqualObjects(expectedString, actualString, @"The returned string was different than expected.");
 }
+
+
+
 
 - (void) testThatAlphabetizationWorks {
     NSArray *inputArray = @[self.worf, self.picard, self.crusher];
