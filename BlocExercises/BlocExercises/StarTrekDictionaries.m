@@ -10,19 +10,35 @@
 
 @implementation StarTrekDictionaries
 
+
 - (NSString *)favoriteDrinkForStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
-    /* WORK HERE */
-    return @"";
+    id favoriteDrink = characterDictionary[@"favorite drink"];
+    if (favoriteDrink != nil && [favoriteDrink isKindOfClass:[NSString class]]) {
+        NSLog(@"No Error");
+    }else{
+        NSLog(@"Error");
+    }
+    return favoriteDrink;
 }
+
 
 - (NSArray *)arrayOfFavoriteDrinksForStarTrekCharacters:(NSArray *)charactersArray {
-    /* WORK HERE */
-    return @[];
+    NSUInteger count = charactersArray.count;
+    NSMutableArray *favoriteDrinkArray = [NSMutableArray array];
+    NSMutableDictionary *tempDictionary = [NSMutableDictionary dictionary];
+    for (NSInteger i = 0; count > i; i++) {
+        tempDictionary = charactersArray[i];
+        [favoriteDrinkArray addObject:tempDictionary[@"favorite drink"]];
+    }
+    return favoriteDrinkArray;
 }
 
+
 - (NSDictionary *)dictionaryWithQuoteAddedToStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
-    /* WORK HERE */
-    return @{};
+    NSMutableDictionary *mutableCharacterDictionary = [characterDictionary mutableCopy];
+    [mutableCharacterDictionary setObject:@"I am Jean-Luc Picard" forKey:@"quote"];
+    return mutableCharacterDictionary;
 }
+
 
 @end
