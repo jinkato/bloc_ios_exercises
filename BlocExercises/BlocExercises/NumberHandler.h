@@ -10,6 +10,8 @@
 
 @interface NumberHandler : NSObject
 
+
+
 /**
  Doubles a number.
 
@@ -18,6 +20,8 @@
  @return An NSNumber with double the value of the provided NSNumber.
  */
 - (NSNumber *) numberThatIsTwiceAsBigAsNumber:(NSNumber *)number;
+
+
 
 /**
  Creates an array of NSNumbers between two integers, inclusively.
@@ -31,6 +35,8 @@
  */
 - (NSArray *) arrayOfNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber;
 
+
+
 /**
  Returns the lowest number in an array.
  
@@ -39,5 +45,7 @@
  @return The lowest number in the array as an NSInteger.
  */
 - (NSInteger) lowestNumberInArray:(NSArray *)arrayOfNumbers;
+
+
 
 @end
