@@ -31,13 +31,20 @@
     [super tearDown];
 }
 
+
+
 - (void)testThatArrayIsRemembered
 {
     NSMutableArray *someArray = [@[@"string", @123, @{@"key": @"value"}, @[@"an array of 1 string"]] mutableCopy];
+    
     [self.rememberer rememberThisArrayForLater:someArray];
+    
     NSMutableArray *otherArray = [self.rememberer arrayYouShouldRemember];
+    
     XCTAssertEqual(someArray, otherArray, @"These aren't the same array.");
 }
+
+
 
 - (void)testThatArrayIsCopied
 {
@@ -48,6 +55,8 @@
     XCTAssertNotEqual(someArray, otherArray, @"These arrays are the same instance, but one is supposed to be a copy of the other.");
 }
 
+
+
 - (void)testThatFloatIsRemembered
 {
     CGFloat someFloat = 3.14159265359;
@@ -56,5 +65,7 @@
     
     XCTAssertEqual(someFloat, otherFloat, @"The two floats aren't equal.");
 }
+
+
 
 @end

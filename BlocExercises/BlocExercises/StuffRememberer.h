@@ -10,6 +10,8 @@
 
 @interface StuffRememberer : NSObject
 
+@property NSMutableArray *memoryOfArray;
+
 /*
  
  In this class, there are three pairs of methods.

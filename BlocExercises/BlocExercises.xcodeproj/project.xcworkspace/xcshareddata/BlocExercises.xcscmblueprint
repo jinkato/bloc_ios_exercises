@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5450119CCA2DD394E9078F73A3071326A1F877FC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4492B43D62AAF39C0F98972EFFCA5AFC96E9AEC8" : 0,
+    "5450119CCA2DD394E9078F73A3071326A1F877FC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "49A2D3B1-3957-4E90-9D22-5D384606E8DE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4492B43D62AAF39C0F98972EFFCA5AFC96E9AEC8" : "..",
+    "5450119CCA2DD394E9078F73A3071326A1F877FC" : "ios-exercises"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BlocExercises",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BlocExercises\/BlocExercises.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitlab.digitas.com\/jkato\/purina-playbook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4492B43D62AAF39C0F98972EFFCA5AFC96E9AEC8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Bloc\/ios-exercises.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5450119CCA2DD394E9078F73A3071326A1F877FC"
+    }
+  ]
+}
