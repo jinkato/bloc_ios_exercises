@@ -17,27 +17,34 @@
 
 
 - (void) copyThisArrayForLater:(NSMutableArray *)arrayToCopy {
-    /* WORK HERE */
+    self.myCopyOfArray = arrayToCopy;
 }
 
 
 - (void) rememberThisFloatForLater:(CGFloat)floatToRemember {
-    /* WORK HERE */
+    NSLog(@"floatToRemember------------------------------- %f     %f", self.myCopyOfFloat, floatToRemember);
+//    self.myCopyOfFloat = &(floatToRemember);
+    NSLog(@"floatToRemember------------------------------- %f     %f", self.myCopyOfFloat, floatToRemember);
 }
+
 
 - (NSMutableArray *) arrayYouShouldRemember {
-    /* WORK HERE */
-    return [@[] mutableCopy];
+    NSMutableArray *returnArray = self.memoryOfArray;
+    return returnArray;
 }
+
+
 
 - (NSMutableArray *) arrayYouShouldCopy {
-    
-    NSLog(@"--------------------- %@", self.memoryOfArray);
-    return [@[] mutableCopy];
+    NSMutableArray *returnArray = self.myCopyOfArray;
+    return returnArray;
 }
 
+
+
 - (CGFloat) floatYouShouldRemember {
-    /* WORK HERE */
+//    CGFloat *returnFloat = self.myCopyOfFloat;
+//    NSLog(@"floatYouShouldRemember------------------------------- %f", returnFloat);
     return 0.0f;
 }
 

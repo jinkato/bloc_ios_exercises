@@ -36,11 +36,8 @@
 - (void)testThatArrayIsRemembered
 {
     NSMutableArray *someArray = [@[@"string", @123, @{@"key": @"value"}, @[@"an array of 1 string"]] mutableCopy];
-    
     [self.rememberer rememberThisArrayForLater:someArray];
-    
     NSMutableArray *otherArray = [self.rememberer arrayYouShouldRemember];
-    
     XCTAssertEqual(someArray, otherArray, @"These aren't the same array.");
 }
 
