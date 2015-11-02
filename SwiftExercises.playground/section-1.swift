@@ -84,6 +84,19 @@ let mostafaElSayedUser = ["name" : "Mostafa A. El-Sayed", "occupation" : "Chemic
 let marjorieBrowneUser = ["name" : "Marjorie Lee Browne", "occupation" : "Mathematician", "birthday" : "September 9, 1914"]
 
 
+var x : Int?
+
+x = nil
+
+// var y = x! + 5
+var z : Int = 1
+
+if let thereIsX = x {
+    z = thereIsX
+}
+
+z
+
 // If your emailFromUserDict function is implemented correctly, both of these should output "true":
 
 emailFromUserDict(mostafaElSayedUser) == "mael-sayed@gatech.edu"
